@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 </head>
 <body>
   <nav class="white" role="navigation">
@@ -16,7 +17,7 @@
       <a id="logo-container" href="#" class="brand-logo"><strong>Linkin' Mark</strong></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Descargar </a></li>
-        <li><a href="#">Demo</a></li>
+        <li><a href="#demo">Demo</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -25,6 +26,30 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+
+
+
+  <div class="container hide" id="demo">
+    <div class="row">
+      <div class="col s12">
+        <h5 class="header center blue-text">Extractor de Links Markdown</h5>
+        <div class="row center">
+          <p class="header col s12 light">Módulo de Node.js que recibe un string (en formato Markdown) y extrae todos los links encontrados. </p>
+        </div>
+        <div class="row center">
+          <div class="input-field col s12">
+            <textarea id="txtInput" class="materialize-textarea"></textarea>
+            <label for="textarea1">Texto Markdown</label>
+          </div>
+          <a  id="extract" class="btn-large waves-effect waves-light blue">Extrae tus links</a>
+        </div>
+        
+         <pre>
+            <code id="result"></code>
+          </pre>
+      </div>
+    </div>
+  </div>
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
